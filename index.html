@@ -70,13 +70,13 @@
 
         // Send the user's age and height to the parent window--sending the
         // data as an object that the parent can receive and parse.
-        console.log("Sending data to http://dev.project.com.");
+        console.log("Sending data to https://silvanoamaral.github.io/iframe-parent/");
         parent.postMessage(
           {
             user_age: $("input[name='user_age']").val(),
             user_height: $("input[name='user_height']").val(),
           },
-          "/Users/silvanoa/Desktop/iframe.html"
+          "https://silvanoamaral.github.io/iframe-parent/"
         );
 
         // The `parent.postMesage()` call allows you to specify "*" as the
